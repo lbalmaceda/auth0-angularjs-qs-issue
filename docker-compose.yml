@@ -4,7 +4,6 @@ services:
     build: ./sample
   runner:
     build: ./runner
-    command: test tests.js --initial-url=http://app:3000
     volumes:
       - ./out:/app/screenshots
     depends_on: 
