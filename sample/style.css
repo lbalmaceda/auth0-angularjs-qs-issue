@@ -1,3 +1,7 @@
+.btn-margin {
+  margin-top: 7px
+}
+
 .loading {
   position: absolute;
   display: flex;
@@ -9,4 +13,8 @@
   left: 0;
   right: 0;
   background-color: #fff;
+}
+
+a {
+  cursor: pointer;
 }

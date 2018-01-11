@@ -10,17 +10,21 @@ http://errors.angularjs.org/1.6.8/$injector/unpr?p0=authServiceProvider%20%3C-%2
 
 ## Configuration
 
-Open the file `sample/src/app/auth/auth0-variables.ts` and replace the `CLIENT_ID` and `DOMAIN` placeholders with a valid Auth0 client information.
+Open the file `sample/auth0-variables.js` and replace the `CLIENT_ID` and `DOMAIN` placeholders with a valid Auth0 client information.
 
 ## How to run
 
 Install Docker and Docker Compose. Refer to their [documentation](https://docs.docker.com/engine/installation/) for more information.
 
+Then run:
+
 ```sh
 docker-compose up --build --abort-on-container-exit
 ```
 
-To exit the container press `CTRL+C` and clear any orphan container by running
+The containers should stop after the test execution finishes. If that doesn't happen, you can exit the container by pressing `CTRL+C`.
+
+To clear any orphan container run:
 
 ```sh
 docker-compose down
