@@ -26,3 +26,13 @@ To exit the container press `CTRL+C` and clear any orphan container by running
 docker-compose down
 ```
 
+## FAQ and Issues
+
+- The container image doesn't seem to be recreated when running `docker-compose up`. --> This seems to be the intended behavior as the developers describe [here](https://github.com/docker/compose/issues/1487#issuecomment-107048571). You can force a recreate by calling `docker-compose build` from the project root. Run:
+
+```
+docker-compose down
+docker-compose build
+docker-compose up
+```
+
